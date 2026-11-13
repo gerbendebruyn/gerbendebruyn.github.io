@@ -4686,3 +4686,19 @@ input, select, textarea {
 		}
 
 	}
+/* Keep the menu bar visible while scrolling (desktop). On small screens the template's Menu button is used instead. */
+@media screen and (min-width: 981px) {
+	#wrapper {
+		overflow: clip;
+	}
+	#nav {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 10000;
+		background-color: #1e252d;
+	}
+	#navPanelToggle {
+		display: none !important;
+	}
+}
